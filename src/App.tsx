@@ -34,7 +34,7 @@ const ProtectedRoutes = () => {
 }
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/nihongo">
     <AuthProvider>
       <ProtectedRoutes />
     </AuthProvider>
