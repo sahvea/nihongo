@@ -1,0 +1,99 @@
+.root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.headerInner {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 12px 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userName {
+  font-size: 13px;
+  color: var(--text-muted);
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.logoutBtn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+.logoutBtn:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+.main {
+  flex: 1;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  display: flex;
+  z-index: 10;
+}
+
+.navItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 0 14px;
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color 0.15s;
+}
+
+.navItem:hover {
+  color: var(--text);
+}
+.navActive {
+  color: var(--accent) !important;
+}
+
+.navIcon {
+  font-size: 22px;
+}
+.navLabel {
+  font-size: 11px;
+  font-weight: 500;
+}
