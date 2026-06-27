@@ -1,0 +1,237 @@
+.root {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 1.25rem;
+}
+
+.userBlock {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.userHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.userName {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.userTotal {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.subTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 1rem 0 8px;
+}
+
+.barRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.barLabel {
+  font-size: 13px;
+  color: var(--text);
+  width: 140px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.barTrack {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+  transition: width 0.4s ease;
+  min-width: 2px;
+}
+
+.barValue {
+  font-size: 12px;
+  font-family: monospace;
+  color: var(--text-muted);
+  width: 56px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.weekChart {
+  display: flex;
+  gap: 6px;
+  align-items: flex-end;
+  height: 80px;
+  margin-top: 8px;
+}
+
+.dayCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
+}
+
+.dayBarWrap {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.dayBar {
+  width: 100%;
+  background: var(--accent);
+  border-radius: 4px 4px 0 0;
+  min-height: 2px;
+  opacity: 0.7;
+  transition: height 0.4s ease;
+}
+
+.dayLabel {
+  font-size: 10px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.5rem 0;
+}
+
+.sharedTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 1rem;
+}
+
+.hint {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 1rem;
+}
+
+.heatmapWrap {
+  position: relative;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.heatmapMonths {
+  display: grid;
+  grid-template-columns: repeat(26, 14px);
+  gap: 2px;
+  margin-bottom: 4px;
+  padding-left: 0;
+}
+
+.monthLabel {
+  font-size: 10px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.heatmapGrid {
+  display: grid;
+  grid-template-rows: repeat(7, 14px);
+  grid-template-columns: repeat(26, 14px);
+  gap: 2px;
+}
+
+.heatCell {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  cursor: default;
+}
+
+.level0 {
+  background: var(--border);
+}
+.level1 {
+  background: #9be9a8;
+}
+.level2 {
+  background: #40c463;
+}
+.level3 {
+  background: #30a14e;
+}
+.level4 {
+  background: #216e39;
+}
+
+@media (prefers-color-scheme: dark) {
+  .level0 {
+    background: #2a2a2a;
+  }
+  .level1 {
+    background: #0e4429;
+  }
+  .level2 {
+    background: #006d32;
+  }
+  .level3 {
+    background: #26a641;
+  }
+  .level4 {
+    background: #39d353;
+  }
+}
+
+.tooltip {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  height: 16px;
+}
